@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--je defini que c en html-->
+<html lang="fr">
+<!-- j'ouvre avec une balise html et je definie la langue du site,ca aide pour le referencement -->
+
+<head>
+    <!--information en dehors de la page comme longlet  -->
+    <title>mon premier site </title>
+    <!-- pour renommer longlet  -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- afficher icon onglet passer par favicon generator -->
+    <link rel="stylesheet" href="Design/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+
+<section id="bienvenue">
+    <div class="conteneur">
+        <header>
+            <u>It's time to travel</u>
+            <span id="slogan">Il est l'heure de partir découvrir le monde</span>
+
+        </header>
+    </div>
+
+</section>
+    
+
+    <!--contenu de la page-->
+
+    <!-- conteneur -->
+
+
+    <section class="conteneur">
+        <section class="contenu">
+                <section >
+                    <!--CSS=== propriété: valeur; -->
+                    <!-- img pour integrer une images
+                                src="images" pour indiquer la source
+                                alt="ui" pour ajouter mot cle sur notre image et aide les malvoyants
+                                width="50%" pour determiner la dimension de la photo ex 50% de la page-->
+                
+                    <h1><u>Nos meilleurs destinations</u></h1>
+                    <p id="top">Sélectionner votre futur destination dans une petite sélection des villes les plus visitées </p>
+                        <div id="flexbox-ville">
+                            <a href="" id="tokyo" class="ville">Tokyo</a>
+
+                            <a href="" id="kyoto" class="ville">Kyoto</a>
+
+                            <a href="" id="osaka" class="ville">Osaka</a>
+                            
+                            <a href="" id="nara" class="ville">Nara</a>
+                            
+                        </div>
+
+                        <!-- en voir plus -->
+                        <div style="text-align: right; margin-top: 10px;" >
+                            <a href="" id="icon">En voir plus<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg></a>
+                        </div>
+                  </section>       
+                    
+                    
+                       
+                    <!-- <i></i> pour mettre en italic 
+                                <b> pour mettre en gras
+                                    <u> pour souligner
+                                        <strong> pour aussi mettre en gras mais mettre en avant come mot cle-->
+                
+            
+            
+        </section>
+    </section>
+
+
+<footer>
+    <div class="conteneur" id="flexbox-foot">
+        <div id="image-foot">
+            <img src="images/japan-flag.png" alt="japan-flag" style="width: 130px; display: block;">
+            <b><i>2024 © It's time to travel</i></b>
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+                        <!-- a href c'est pour lien exemple une autre page,image -->
+                <li><a href="a_propos.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+</body>
+
+
+
+</html>
+
+<!-- div conteneur utilise pour regroupe et styliser plusieurs éléments
+ section conteneur utilise pour le regroupement de contenu qui constitue une unité logique, souvent avec un titre ou une introduction 
+ span utilise pour stylise une partie sans revenir a la ligne, c'est une balise inline
+ une element bloc prend toute la largeur de la page-->

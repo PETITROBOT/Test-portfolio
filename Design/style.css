@@ -1,0 +1,293 @@
+/* on definie le css par une balise et nomme toujours propriété: valueur; et on doit precise a quelle elements on fait reference
+   
+   element {
+      propriete: valeur;
+      }
+   */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+/* pour dire que toute les marges interne ne depasseront pas dedu contenu/box */
+header {
+   /* pour definir une couleur solutions:
+   -nom ex black
+   -code hexadecimal ex #76CDCD
+   rgb choisir le niveau de rouge vert et bleue pour mixer couleur
+   rgba choisir le niveau de rouge vert et bleue pour mixer couleur et la transparence
+Balise pour integrer la couleur de fond: background-color*/
+  
+   font-size: 65px;
+   font-family: "Pacifico", serif;
+   color:white;
+   text-shadow:  0 0 30px black;
+/* text-shadow: x y flou et couleur  */
+   
+}
+
+#bienvenue {
+   background-image: url("../images/aventure.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   /* justify-content: left; */
+   align-items: center;
+}
+
+#slogan {
+   display: block;
+   font-size: 40px;
+   font-family: "Roboto", sans-serif;
+   
+}
+
+/*vh ou vw valeur hauter et largeur par rapport a la page et lappareil utilise */
+
+
+h1 {
+   font-size: 60px;
+   font-family: "Jacques Francois Shadow", serif;
+   text-align: center;
+   margin: 40px 0 10px;
+}
+
+a {
+   text-decoration: none;
+}
+
+#top {
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 40px;
+   
+}
+#flexbox-ville {
+   /* display: flex; ou */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+ 
+   gap: 30px;
+   
+}
+.ville {
+   background-size: cover;
+   background-position: center;
+   width: 100% ;
+   height: 100%;
+   min-height: 400px;
+   border: 3px solid white;
+   transition: all 0.4s;
+   border-radius: 20px;
+   text-shadow: 0 0 30px black;
+   font-size: 40px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   
+}
+
+.ville:hover {
+   border: 3px solid #FF7373;
+   /* cursor: pointer;  pour modifier lapparence de la souris */
+}
+#tokyo {
+   background-image: url("https://images.ctfassets.net/bth3mlrehms2/2cCxpmVnFuv9cwMkr2NsqO/c007c069037ffd565da823c0521768c5/Japan_Tokio_Skyline_und_Mt._Fuji.jpg?w=3721&h=2093&fl=progressive&q=50&fm=jpg");
+   grid-row: 1 / 3;
+}
+
+#kyoto {
+   background-image: url("https://ulysse.com/news/wp-content/uploads/2024/05/Kyoto-au-Japon.jpg");
+   grid-column: 2 / 4;
+}
+#osaka {
+   background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/477000/477571-Osaka.jpg");
+}
+
+#nara {
+   background-image: url("https://images.pexels.com/photos/15845939/pexels-photo-15845939/free-photo-of-jardin-animal-parc-porte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#icon {
+   display: inline-flex;
+   align-items: center; 
+   color: #ff7373;
+   gap: 0;
+   transition: all 0.4s;
+}
+#icon:hover {
+   gap: 10px;
+} 
+
+h2 {
+   margin: 5px 0px 0px 0px;
+
+
+
+}
+
+
+body {
+   font-family: "Roboto", sans-serif;
+   margin: 0px 0px;
+   /* margin si le bas n'est pas donné alors egale au haut et si gauche n'est pas donné alors egale a droite */
+}
+
+
+img {
+   width: 100%;
+
+}
+
+footer a, footer li {
+   color: #FF7373;
+
+}
+
+.christophe {
+   color: brown;
+
+
+}
+
+.bold {
+   font-weight: bold;
+
+
+}
+
+.italic {
+   font-style: italic;
+
+
+}
+
+.underline {
+   text-decoration: underline;
+
+}
+
+ul {
+   margin: 5px 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+
+footer {
+   /* background-image: url("https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjM2Ny1iaW5uLTAyLWphcGFuZXNlcGF0dGVybl8yLmpwZw.jpg"); 
+   background-size: 150px;
+   background-repeat: repeat-x;*/
+   background: left/200px url("https://t4.ftcdn.net/jpg/02/05/01/41/360_F_205014194_jXn6FXUBQo2iukZXBHECAK3RwEuM83Fh.jpg"), #FF7373;
+   font-size: 20px;
+   margin-top: 10px;
+   padding: 20px;
+   color: #FF7373;
+   text-shadow: 0 0 85px black;
+   text-align: left;
+   
+}
+
+.contenu {
+   padding: 10px;
+
+}
+
+.conteneur { 
+   width: 1300px;
+   margin: 0 auto;
+}
+
+
+/* les selecteurs:
+                   1,2 = applique a 1 et 2
+                   element 1 element 2 = applique a element 2 si il est dans element 1
+                   # pour selectionner un id
+                   . pour selectionner une class
+                   <span> pour accrocher une classe
+                   font-weight pour mettre en gras "poid de la police"
+
+                   
+                   */
+
+
+
+
+
+/* @media Type and Taille { } 
+          Print imprimer page
+          all pour tout television mobile...
+          screen pour les ecran
+          768px tablette
+          480px petit tel*/
+
+#flexbox-foot {
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+}
+
+@media all and (max-width: 1350px) {
+   .conteneur {
+      width: 800px;}
+
+   #flexbox-ville {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   #kyoto {
+      grid-column: auto;
+   }
+
+   #tokyo {
+      grid-row: auto;
+   }
+   #nara {
+      grid-column: auto;
+   }
+
+}
+
+@media all and (max-width: 800px) {
+   .conteneur {
+      width: 500px;
+   }
+
+   #flexbox-ville {
+      grid-template-columns: 1fr;
+   }
+   #tokyo {
+      grid-column: auto;
+   }
+
+   #nara {
+      grid-column: auto;
+   }
+   
+   #flexbox-foot {
+      flex-direction: column;
+   }
+
+   #image-foot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media all and (max-width: 570px) {
+   .conteneur {
+      width: 100%;
+   }
+   #bienvenue {
+      padding: 15px;
+   }
+
+}
